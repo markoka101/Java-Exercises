@@ -1,6 +1,7 @@
 package LoopsAndOperations;
 
 public class ProblemSet {
+    public ProblemSet(){}
 
     /*
     Calculate and return the result of x and y using the given operation
