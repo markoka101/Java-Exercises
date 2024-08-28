@@ -29,7 +29,7 @@ public class LoopsAndOperationsTest {
 
     @Test
     public void fizzBuzzTest() {
-        Assert.assertArrayEquals(new String[]{"0","1","2","fizz","4","fizzbuzz"},problemSet.fizzBuzz(6));
+        Assert.assertArrayEquals(new String[]{"0","1","2","fizz","4","buzz"},problemSet.fizzBuzz(6));
         Assert.assertEquals("fizzbuzz",problemSet.fizzBuzz(16)[15]);
     }
 
