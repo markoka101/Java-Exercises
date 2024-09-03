@@ -6,6 +6,7 @@ public class ProblemSet {
     /*
     Calculate and return the result of x and y using the given operation
     operations: + - * /
+    (x / y) will always be a whole number
     */
     public int calculate(char op, int x, int y) {
         return 0;
@@ -19,8 +20,8 @@ public class ProblemSet {
     }
 
     /*
-    Set index of array to either fizz, buzz, fizzbuzz, or number depending on the number
-    Range will be 0 <= i < n
+    Set index of array to either fizz, buzz, fizzbuzz, or the number as a string depending on the number
+    starting from 0 and ending on n-1
     fizz: divisible by 3
     buzz: divisible by 5
     fizzbuzz: divisible by both 3 and 5
