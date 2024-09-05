@@ -3,9 +3,9 @@ package LoopsAndOperations;
 public class Answers {
     /*
     I use a switch statement for the different values that op can be
-    This is clean than chaining a ton of else if statements
+    This is cleaner than chaining a bunch of "else if" statements
 
-    ** There is a better way using something called an enhanced switch **
+    ** There is a better way to do this using something called an enhanced switch **
     ** See if you can figure out how to use it **
     */
     public int calculate(char op, int x, int y) {
@@ -22,8 +22,10 @@ public class Answers {
     }
 
     /*
-    I have two variables which represent F(n-2) and F(n-1)
-    As we loop I make one variable F(n-1) + F(n-2)  and the other becomes F(n-1)
+    I am going to use two variables 'a' and 'b' to get the answer
+        a will be F(n-2)
+        b will be F(n-1)
+    As we loop I make one variable F(n-1) + F(n-2) and the other F(n-1)
      */
     public int fib(int n) {
         //if n < 2 we can't have two variables so just return the answer
@@ -44,11 +46,13 @@ public class Answers {
             //create a temp variable to hold F(n-1)
             int t = b;
 
-            //add F(n-2) to b
+            //add F(n-2) to 'b'
             b += a;
-            //set a to the temp variable which held b
+            //set 'a' to the temp variable
             a = t;
         }
+
+        //Since we are done looping 'b' is F(N)
         return b;
     }
 
